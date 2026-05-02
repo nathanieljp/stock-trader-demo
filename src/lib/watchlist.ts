@@ -17,8 +17,8 @@ export const WATCHLIST: WatchlistStock[] = [
   { symbol: 'GEV', name: 'GE Vernova', sector: 'Energy & Nuclear', type: 'equity' },
   { symbol: 'SMR', name: 'NuScale Power', sector: 'Energy & Nuclear', type: 'equity' },
 
-  // Cloud & Infrastructure
-  { symbol: 'ORCL', name: 'Oracle', sector: 'Cloud & Infrastructure', type: 'equity' },
+  // Cloud & Cybersecurity
+  { symbol: 'ORCL', name: 'Oracle', sector: 'Cloud & Cybersecurity', type: 'equity' },
 
   // Quantum Computing
   { symbol: 'IONQ', name: 'IonQ', sector: 'Quantum Computing', type: 'equity' },
