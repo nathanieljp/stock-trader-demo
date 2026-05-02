@@ -2,7 +2,6 @@ import { NextResponse } from 'next/server';
 import { WATCHLIST } from '@/lib/watchlist';
 import { StockQuote } from '@/lib/types';
 
-const LIMIT = 10;
 const BASE = 'https://finnhub.io/api/v1';
 
 export async function GET() {
@@ -11,7 +10,7 @@ export async function GET() {
     return NextResponse.json({ error: 'FINNHUB_API_KEY not set' }, { status: 500 });
   }
 
-  const stocks = WATCHLIST.slice(0, LIMIT);
+  const stocks = WATCHLIST;
 
   const results = await Promise.allSettled(
     stocks.map(async (stock) => {

@@ -5,6 +5,7 @@ import { EarningsEvent } from '@/lib/types';
 const DAYS_AHEAD = 90;
 const BASE = 'https://finnhub.io/api/v1';
 
+
 function toYMD(date: Date): string {
   return date.toISOString().split('T')[0];
 }
